@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    --blockcenter: translate(-50%, 50%);
+    --topcenter: 10%;
+    --largecenter: 50%;
+}
+
+body {
+    background-color: rgb(218, 213, 213);
+}
+
+.main {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 50%;
+    width: 45%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.main>h1 {
+    position: relative;
+    top: 5%;
+    left: 15%;
+    font-family: Arial, sans-serif;
+    padding: auto;
+    width: 60%;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.main>.blocForm {
+    position: relative;
+    top: var(--topcenter, auto);
+    left: var(--largecenter);
+    transform: var(--blockcenter);
+
+
+}
+
+.champ {
+    position: relative;
+    appearance: none;
+    outline: none;
+    width: 83%;
+    padding: 14px 20px;
+    left: 5.5%;
+    border: none;
+    border-bottom: 3px solid #ec6767;
+    border-bottom-left-radius: 0.5px;
+    border-bottom-right-radius: 0.5px;
+    appearance: none;
+    background: #f2f2f2;
+    font-size: 14px;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.cust .placeholder {
+    position: absolute;
+    left: 32.1px;
+    top: calc(-50% + 50px);
+    transform: translateY(-90%);
+    color: #ec6767;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease-in-out;
+}
+
+.cust .champ:valid+.placeholder,
+.cust .champ:focus+.placeholder {
+    top: 15.5px;
+    font-size: 14px;
+    color: #3154f1;
+
+}
+
+.cust .champ:valid+,
+.cust .champ:focus {
+    border-bottom: 3px solid #3154f1;
+}
+
+.cust {
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+.sousTitre {
+    position: relative;
+    left: 5.5%;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+button {
+    position: relative;
+    left: 75%;
+    padding: 20px;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    top: 80%;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
